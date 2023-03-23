@@ -1,33 +1,35 @@
-//FONTS
+//TYPOGRAPHY
 
 //family
-$font-primary: 'Outfit', sans-serif;
+$font-primary: 'Fraunces', serif;
+$font-secondary: 'Montserrat', sans-serif;
 $font-tertiary: sans-serif;
 
 //weights
-$font-weight-primary: 400;
-$font-weight-secondary: 700;
+$weight-primary-medium: 500;
+$weight-primary-heavy: 700;
+$weight-secondary-heavy: 700;
 
 //sizes
-$font-size-primary: 15px;
-$font-size-secondary: 22px;
-$font-size-tertiary: 11px;
+$copy-size: 14px;
 
 
 //COLORS
 
+$dark-cyan: hsl(158, 36%, 37%);
+$cream: hsl(30, 38%, 92%);
+$very-dark-blue: hsl(212, 21%, 14%);
+$dark-grayish-blue: hsl(228, 12%, 48%);
 $white: hsl(0, 0%, 100%);
-$light-gray: hsl(212, 45%, 89%);
-$grayish-blue: hsl(220, 15%, 55%);
-$dark-blue: hsl(218, 44%, 22%);
-$link-blue: hsl(228, 45%, 44%);
 
-
-//WIDTHS
+//DEVICES
 
 $mobile-width: 375px;
 $desktop-width: 1440px;
-$image-width: 270px;
+
+//MEDIA SIZES
+
+
 
 //MARGINS
 
