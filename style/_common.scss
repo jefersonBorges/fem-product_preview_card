@@ -1,0 +1,23 @@
+* {
+  //box-model
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  //positioning
+  position: relative;
+
+  //box-model
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: $mobile-width;
+  max-width: $desktop-width;
+  height: 100vh;
+
+  //visual
+  background-color: $light-gray;
+}

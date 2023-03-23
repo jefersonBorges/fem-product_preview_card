@@ -1,0 +1,22 @@
+@import 'fonts';
+@import 'variables';
+@import 'common';
+
+.attribution {
+  //positioning
+  position: absolute;
+  bottom: 0;
+
+  //box-model
+  margin-bottom: $margin-small;
+
+  //typography
+  font-family: $font-tertiary;
+  font-size: $font-size-tertiary; 
+  text-align: center;
+
+  .link {
+    //typography
+    color: $link-blue;
+  }
+}
