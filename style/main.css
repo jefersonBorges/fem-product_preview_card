@@ -23,7 +23,10 @@ body {
   justify-content: center;
   align-items: center;
 }
-.product-card .product-photo {
+.product-card .product-photo-mobile {
+  display: none;
+}
+.product-card .product-photo-desktop {
   height: 450px;
   width: 300px;
   border-top-left-radius: 10px;
@@ -48,7 +51,10 @@ body {
   letter-spacing: 4.6666666667px;
   color: hsl(228, 12%, 48%);
 }
-.product-card .product-info .title {
+.product-card .product-info .title-mobile {
+  display: none;
+}
+.product-card .product-info .title-desktop {
   text-transform: capitalize;
   font-family: "Fraunces", serif;
   font-size: 30px;
@@ -113,6 +119,46 @@ body {
   margin-right: 10px;
 }
 
+@media only screen and (max-width: 375px) {
+  body {
+    height: unset;
+    min-height: 100vh;
+  }
+  .product-card {
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  .product-card .product-photo-desktop {
+    display: none;
+  }
+  .product-card .product-photo-mobile {
+    display: block;
+    height: 250px;
+    width: 350px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  .product-card .product-info {
+    height: 400px;
+    width: 350px;
+    padding: 30px;
+    border-radius: unset;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  .product-card .product-info .title-desktop {
+    display: none;
+  }
+  .product-card .product-info .title-mobile {
+    display: flex;
+    text-transform: capitalize;
+    font-family: "Fraunces", serif;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 30px;
+    color: hsl(212, 21%, 14%);
+  }
+}
 .attribution {
   position: absolute;
   bottom: 0;
