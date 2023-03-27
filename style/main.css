@@ -1,6 +1,7 @@
+/*Montserrat - 500, 700*/
 @import 'https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Outfit:wght@400;700&display=swap';
+/*Fraunces - 500*/
 @import 'https://fonts.googleapis.com/css2?family=Fraunces:wght@700&display=swap';
-@import 'https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200';
 * {
   margin: 0;
   padding: 0;
@@ -14,11 +15,96 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  background-color: hsl(30, 38%, 92%);
 }
 
-/*Google Icons*/
-.material-symbols-outlined {
-  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+.product-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.product-card .product-photo {
+  height: 450px;
+  width: 300px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.product-card .product-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 450px;
+  width: 300px;
+  padding: 30px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: hsl(0, 0%, 100%);
+}
+.product-card .product-info .category {
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  letter-spacing: 7px;
+  color: hsl(228, 12%, 48%);
+}
+.product-card .product-info .title {
+  text-transform: capitalize;
+  font-family: "Fraunces", serif;
+  font-size: 30px;
+  line-height: 30px;
+  color: hsl(212, 21%, 14%);
+}
+.product-card .product-info .copy {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  color: hsl(228, 12%, 48%);
+}
+.product-card .product-info .copy .capitalized {
+  text-transform: capitalize;
+}
+.product-card .product-info .copy .uppercased {
+  text-transform: uppercase;
+}
+.product-card .product-info .pricing {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.product-card .product-info .pricing .price {
+  margin-right: 30px;
+  font-family: "Fraunces", serif;
+  font-size: 30px;
+  color: hsl(158, 36%, 37%);
+}
+.product-card .product-info .pricing .price::before {
+  content: "$";
+}
+.product-card .product-info .pricing .old-price {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  color: hsl(228, 12%, 48%);
+}
+.product-card .product-info .pricing .old-price::before {
+  content: "$";
+}
+.product-card .product-info .add-to-cart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border: none;
+  padding: 20px;
+  text-transform: capitalize;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: hsl(0, 0%, 100%);
+  border-radius: 10px;
+  background-color: hsl(158, 36%, 37%);
+}
+.product-card .product-info .add-to-cart .icon {
+  margin-right: 10px;
 }
 
 .attribution {

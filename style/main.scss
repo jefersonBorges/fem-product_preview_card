@@ -1,10 +1,136 @@
 @import 'fonts';
-@import 'icons';
 @import 'variables';
 @import 'common';
 
 .product-card{
-  
+  //box-model
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .product-photo{
+    //box-model
+    height: $product-photo-height;
+    width: $product-photo-width;
+
+    //visual
+    border-top-left-radius : $radius-small;
+    border-bottom-left-radius: $radius-small;
+  }
+
+  .product-info{
+    //box-model
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    height: $product-info-height;
+    width: $product-info-width;
+
+    padding: $padding-big;
+
+
+    //visual
+    border-top-right-radius : $radius-small;
+    border-bottom-right-radius: $radius-small;
+    background-color: $white;
+
+    .category{
+      //typography
+      text-transform: uppercase;
+      font-family: $font-secondary;
+      font-size: $font-size-secondary;
+      letter-spacing: $letter-spacing-secondary;
+      color: $dark-grayish-blue;
+
+    }
+
+    .title{
+      //typography
+      text-transform: capitalize;
+      font-family: $font-primary;
+      font-size: $font-size-primary;
+      line-height: $line-height-primary;
+      color: $very-dark-blue;
+    }
+
+    .copy{
+      //typography
+      font-family: $font-secondary;
+      font-size: $font-size-secondary;
+      line-height: $line-height-secondary;
+      color: $dark-grayish-blue;
+
+      .capitalized{
+        text-transform: capitalize;
+      }
+      .uppercased{
+        text-transform: uppercase;
+      }
+    }
+
+    .pricing{
+      //box-model
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+
+      .price{
+        //box-model
+        margin-right: $margin-big;
+
+        //typography
+        font-family: $font-primary;
+        font-size: $font-size-primary;
+        color: $dark-cyan;
+
+        &::before{
+          content: "$";
+        }
+      }
+
+      .old-price{
+        //typography
+        font-family: $font-secondary;
+        font-size: $font-size-secondary;
+        color: $dark-grayish-blue;
+        
+        &::before{
+          content: "$";
+        }
+      }
+      
+    }
+
+    .add-to-cart{
+      //box-model
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      width: 100%;
+      border: none;
+      padding: $padding-medium;
+
+      //typography
+      text-transform: capitalize;
+      font-family: $font-secondary;
+      font-weight: $weight-secondary-heavy;
+      color: $white;
+
+      //visual
+      border-radius: $radius-small;
+      background-color: $dark-cyan;
+
+      .icon{
+        margin-right: $margin-small;
+      }
+    }
+
+  }
+
+
 }
 
 .attribution {
