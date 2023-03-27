@@ -51,6 +51,7 @@
       text-transform: capitalize;
       font-family: $font-primary;
       font-size: $font-size-primary;
+      font-weight: $weight-primary-heavy;
       line-height: $line-height-primary;
       color: $very-dark-blue;
     }
@@ -122,6 +123,14 @@
       //visual
       border-radius: $radius-small;
       background-color: $dark-cyan;
+
+      //animation
+      transition: all 0.3s;
+
+      &:hover{
+        cursor: pointer;
+        background-color: darken($color: $dark-cyan, $amount: 20%);
+      }
 
       .icon{
         margin-right: $margin-small;

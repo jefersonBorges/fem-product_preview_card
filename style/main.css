@@ -45,13 +45,14 @@ body {
   text-transform: uppercase;
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
-  letter-spacing: 7px;
+  letter-spacing: 4.6666666667px;
   color: hsl(228, 12%, 48%);
 }
 .product-card .product-info .title {
   text-transform: capitalize;
   font-family: "Fraunces", serif;
   font-size: 30px;
+  font-weight: 700;
   line-height: 30px;
   color: hsl(212, 21%, 14%);
 }
@@ -102,6 +103,11 @@ body {
   color: hsl(0, 0%, 100%);
   border-radius: 10px;
   background-color: hsl(158, 36%, 37%);
+  transition: all 0.3s;
+}
+.product-card .product-info .add-to-cart:hover {
+  cursor: pointer;
+  background-color: #1c3b30;
 }
 .product-card .product-info .add-to-cart .icon {
   margin-right: 10px;
