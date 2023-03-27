@@ -1,21 +1,27 @@
 * {
-  //box-model
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
 body {
-  //positioning
+
   position: relative;
 
-  //box-model
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
 
-  //visual
   background-color: $cream;
+}
+
+/*Minimum Optimal device width is 375px*/
+@media only screen and (min-width: $mobile-min-width) and (max-width: $mobile-max-width) {
+
+  body {
+    height: unset;
+    min-height: 100vh;
+  }
 }
