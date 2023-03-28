@@ -18,6 +18,13 @@ body {
   background-color: hsl(30, 38%, 92%);
 }
 
+/*Minimum Optimal device width is 375px*/
+@media only screen and (min-width: 375px) and (max-width: 700px) {
+  body {
+    height: unset;
+    min-height: 100vh;
+  }
+}
 .product-card {
   display: flex;
   justify-content: center;
@@ -120,11 +127,7 @@ body {
 }
 
 /*Minimum Optimal device width is 375px*/
-@media only screen and (max-width: 700px) {
-  body {
-    height: unset;
-    min-height: 100vh;
-  }
+@media only screen and (min-width: 375px) and (max-width: 700px) {
   .product-card {
     flex-direction: column;
     margin-bottom: 20px;

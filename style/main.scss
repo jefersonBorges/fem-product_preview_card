@@ -68,7 +68,6 @@
       .uppercased {
         text-transform: uppercase;
       }
-
     }
 
     .pricing {
@@ -86,7 +85,6 @@
         &::before {
           content: "$";
         }
-
       }
 
       .old-price {
@@ -97,9 +95,7 @@
         &::before{
           content: "$";
         }
-
       }
-      
     }
 
     .add-to-cart {
@@ -129,7 +125,6 @@
       .icon {
         margin-right: $margin-small;
       }
-
     }
   }
 }
@@ -177,7 +172,6 @@
         line-height: $line-height-primary;
         color: $very-dark-blue;
       }
-
     }
   }
 }
