@@ -13,6 +13,7 @@ This is a solution to the [Product preview card component challenge on Frontend 
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
+- [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -59,3 +60,7 @@ Users should be able to:
 - GitHub - [jefersonBorges](https://github.com/jefersonBorges/jefersonBorges)
 - Frontend Mentor - [@jefersonBorges](https://www.frontendmentor.io/profile/jefersonBorges)
 - Linkedin - [Jeferson Borges Linkedin](https://www.linkedin.com/in/jeferson-borges-543b34229)
+
+## Acknowledgments
+
+Thanks to [@Hassiai](https://www.frontendmentor.io/profile/Hassiai) for the helpful feedback on the first solution for this challenge.
