@@ -4,24 +4,17 @@
   box-sizing: border-box;
 }
 
-body {
+html{
+  font-size: $font-size-document;
+}
 
+body {
   position: relative;
 
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
 
   background-color: $cream;
-}
-
-/*Minimum Optimal device width is 375px*/
-@media only screen and (min-width: $mobile-min-width) and (max-width: $mobile-max-width) {
-
-  body {
-    height: unset;
-    min-height: 100vh;
-  }
 }

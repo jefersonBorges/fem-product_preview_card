@@ -9,17 +9,19 @@
 </head>
 <body>
 
-  <article class="product-card">
+  <main role="main" class="product-card">
 
-    <img class="product-photo-desktop" src="images/image-product-desktop.jpg" alt="Perfume Gabrielle essence eau de parfum">
-    <img  class="product-photo-mobile" src="images/image-product-mobile.jpg" alt="Perfume Gabrielle essence eau de parfum">
+    <picture class="product-photo">
+      <source srcset="images/image-product-mobile.jpg" media="(max-width: 50rem)">
+      <source srcset="images/image-product-desktop.jpg" media="(max-width: 103rem)">
+      <img class="photo" src="images/image-product-mobile.jpg" alt="Perfume Gabrielle essence eau de parfum">
+    </picture>
 
-    <section class="product-info">
+    <article class="product-info">
 
       <span class="category">Perfume</span>
   
-      <h1 class="title-desktop">Gabrielle <br>essence eau <br>de parfum</h1>
-      <h1 class="title-mobile">Gabrielle essence <br>eau de parfum</h1>
+      <h1 class="title">Gabrielle essence eau de parfum</h1>
 
       <p class="copy">
         A floral, solar and voluptuous interpretation composed by <span class="capitalized">Olivier Polge</span>, 
@@ -36,11 +38,11 @@
         add to cart
       </button>
       
-    </section>
+    </article>
 
-  </article>
+  </main>
   
-  <footer class="attribution">
+  <footer role="contentinfo" class="attribution">
     Challenge by <a class="link" href="https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa" target="_blank">Frontend Mentor</a>. 
     Coded by <a class="link" href="https://www.frontendmentor.io/profile/jefersonBorges" target="_blank">Jeferson Borges</a>.
   </footer>

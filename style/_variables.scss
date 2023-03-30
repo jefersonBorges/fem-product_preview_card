@@ -11,9 +11,10 @@ $weight-primary-heavy: 700;
 $weight-secondary-heavy: 700;
 
 //sizes
-$font-size-primary: 30px;
-$font-size-secondary: 14px;
-$font-size-tertiary: 11px;
+$font-size-document: 14px;
+$font-size-primary: 2rem;
+$font-size-secondary: 1rem;
+$font-size-tertiary: 0.75rem;
 
 //spacing
 
@@ -33,37 +34,37 @@ $link-blue: hsl(228, 45%, 44%);
 
 //DEVICES
 
-$mobile-max-width: 700px;
-$mobile-min-width: 375px;
-$desktop-width: 1440px;
+$mobile-min-width: 27rem;
+$mobile-max-width: 50rem;
+$desktop-width: 103rem;
 
 //MEDIA SIZES
-$product-photo-height: 450px;
-$product-photo-width: 300px;
+$product-photo-height: 33rem;
+$product-photo-width: 22rem;
 
 $product-info-height: $product-photo-height;
 $product-info-width: $product-photo-width;
 
-$product-photo-height-mobile: 250px;
-$product-photo-width-mobile: 350px;
+$product-photo-height-mobile: 18rem;
+$product-photo-width-mobile: 25rem;
 
-$product-info-height-mobile: 400px;
+$product-info-height-mobile: 29rem;
 $product-info-width-mobile: $product-photo-width-mobile;
 
 
 //MARGINS
 
-$margin-small: 10px;
-$margin-medium: 20px;
-$margin-big: 30px;
+$margin-small: 0.75rem;
+$margin-medium: 1.5rem;
+$margin-big: 2.25rem;
 
 //PADDINGS
 
-$padding-small: 10px;
-$padding-medium: 20px;
-$padding-big: 30px;
+$padding-small: $margin-small;
+$padding-medium: $margin-medium;
+$padding-big: $margin-big;
 
 //RADIUS
 
-$radius-small: 10px;
-$radius-medium: 20px;
+$radius-small: $margin-small;
+$radius-medium: $margin-medium;
